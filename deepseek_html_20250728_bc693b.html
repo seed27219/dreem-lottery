@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaLotto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">MegaLotto</div>
+            <p>Your chance to win big!</p>
+            <div class="jackpot">
+                <div class="jackpot-label">Current Jackpot:</div>
+                <div class="jackpot-amount">$<span id="jackpotValue">45,000,000</span></div>
+            </div>
+        </header>
+
+        <main>
+            <section class="game-area">
+                <div class="player-section">
+                    <h2>Your Numbers</h2>
+                    <div class="number-grid" id="numberGrid"></div>
+                    <div class="selected-display">
+                        <div class="selected-numbers" id="selectedNumbers"></div>
+                        <div class="selection-count"><span id="selectedCount">0</span>/<span id="maxNumbers">6</span> selected</div>
+                    </div>
+                    <div class="controls">
+                        <button id="quickPick" class="btn quick-pick">Quick Pick</button>
+                        <button id="clearBtn" class="btn clear">Clear</button>
+                        <button id="playBtn" class="btn play">Play for $2</button>
+                    </div>
+                </div>
+
+                <div class="results-section">
+                    <h2>Winning Numbers</h2>
+                    <div class="winning-numbers" id="winningNumbers"></div>
+                    <div class="result-display" id="resultDisplay">
+                        <p>Select your numbers and click Play!</p>
+                    </div>
+                    <div class="prize-breakdown">
+                        <h3>Prize Breakdown</h3>
+                        <ul>
+                            <li><span>6 numbers:</span> Jackpot!</li>
+                            <li><span>5 numbers:</span> $50,000</li>
+                            <li><span>4 numbers:</span> $1,000</li>
+                            <li><span>3 numbers:</span> $50</li>
+                            <li><span>2 numbers:</span> Free play</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="history-section">
+                <h2>Previous Drawings</h2>
+                <div class="history-container" id="historyContainer">
+                    <div class="no-history">No drawing history yet</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2023 MegaLotto. For entertainment purposes only. Must be 18+ to play.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
